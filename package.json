@@ -1,0 +1,20 @@
+{
+  "name": "learn-react-dev",
+  "version": "1.0.0",
+  "description": "learning javascript and react",
+  "keywords": [
+    "react",
+    "js",
+    "css"
+  ],
+  "license": "ISC",
+  "author": "Pavan Kumar",
+  "type": "commonjs",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  }
+}
