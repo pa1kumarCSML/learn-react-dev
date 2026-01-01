@@ -20,6 +20,7 @@ const number = 1000;
 const HeadingComponent = () => (
   <div>
     <JsxHeading2 />
+    <JsxHeading2> </JsxHeading2>
     {jsxHeading}
     {number + 1}
     {console.log("hello")}
