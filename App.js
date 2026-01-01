@@ -17,7 +17,7 @@ const HeadingComponent2 = () => {
     return (
         <h1 className="heading">Heading Component</h1>
     )
-};
+};// more readable syntax
 
 const HeadingComponent3 = () => <h1 className="heading">Heading Component</h1>; // only one element and also in one line
 
