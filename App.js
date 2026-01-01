@@ -15,10 +15,14 @@ const jsxHeading = <h1 id="child">hello world from jsx</h1>;
 // react element
 const JsxHeading2 = () => <h1 id="child">hello world from child component</h1>;
 
+const number = 1000;
+
 const HeadingComponent = () => (
   <div>
     <JsxHeading2 />
     {jsxHeading}
+    {number + 1}
+    {console.log("hello")}
     <h1 className="heading">Heading Component</h1>
   </div>
 ); // mostly used syntax
