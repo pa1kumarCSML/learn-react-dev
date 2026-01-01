@@ -2,15 +2,27 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 
+// react element
+const jsxHeading = (<h1 id="child">hello world from jsx</h1>);
 
-const jsxHeading = <h1 id="child">hello world from jsx</h1>;
+//react components
+// -> class based - old way
+// -> functional based - new way
 
-const parent = React.createElement("div", { id: "parent" },
-    [
-        React.createElement("h1", { id: "child" }, "hello world from react"),
-        jsxHeading
-    ]);
+
+// functional react component(new way)
+const HeadingComponent = () => (<h1 className="heading">Heading Component</h1>); // mostly used syntax
+
+const HeadingComponent2 = () => {
+    return (
+        <h1 className="heading">Heading Component</h1>
+    )
+};
+
+const HeadingComponent3 = () => <h1 className="heading">Heading Component</h1>; // only one element and also in one line
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+//root.render(jsxHeading);
+
+root.render(<HeadingComponent />);
